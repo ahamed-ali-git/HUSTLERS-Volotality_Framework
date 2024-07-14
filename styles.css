@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+:root {
+    --primary-color: #1f3a93; /* Navy */
+    --secondary-color: #3a539b; /* Medium Blue */
+    --accent-color: #3498db; /* Light Blue */
+    --text-color: #2c3e50; /* Dark Text Color */
+    --background-color: #ffffff; /* White Background */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: var(--accent-color);
+}
+
+.file-info {
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 0.9em;
+}
+
+.content {
+    display: flex;
+    gap: 20px;
+}
+
+.sidebar {
+    flex: 1;
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.main-content {
+    flex: 3;
+}
+
+.toolbar {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: var(--accent-color);
+    color: var(--background-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9; /* Darker Light Blue */
+}
+
+button:disabled {
+    background-color: #95a5a6; /* Gray */
+    cursor: not-allowed;
+}
+
+#plugin-list {
+    list-style-type: none;
+}
+
+#plugin-list li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#plugin-list li:hover {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
+#plugin-list li.active {
+    background-color: var(--accent-color);
+    color: var(--background-color);
+}
+
+#results-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#results-table th, #results-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+#results-table th {
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+}
+
+#results-table tbody tr:hover {
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 0.9em;
+    color: #95a5a6; /* Gray */
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HUSTLERS - Volatility Framework Web Interface</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-atom"></i> HUSTLERS.dev</h1>
+            <p>Web Interface for Volatility Framework</p>
+        </header>
+        <main>
+            <div class="file-info">
+                <span id="file-path">file:<em>// insert file-path</em></span>
+            </div>
+            <div class="content">
+                <div class="sidebar">
+                    <h2>Supported Plugins</h2>
+                    <ul id="plugin-list">
+                        <!-- Plugins will be dynamically added here -->
+                    </ul>
+                </div>
+                <div class="main-content">
+                    <div class="toolbar">
+                        <button id="upload-btn"><i class="fas fa-upload"></i> Upload Memory Dump</button>
+                        <input type="file" id="file-upload" hidden>
+                        <button id="run-analysis-btn" disabled><i class="fas fa-play"></i> Run Analysis</button>
+                    </div>
+                    <div id="results-container">
+                        <table id="results-table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>row Parent</th>
+                                    <th>Analysis</th>
+                                    <th>Local Address</th>
+                                    <th>Status</th>
+                                    <th>PID</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Results will be dynamically added here -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>© 2024 HUSTLERS. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+ <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+<script src="https://mediafiles.botpress.cloud/57a284a7-b209-4e6c-a548-f3449ae45beb/webchat/config.js" defer></script>
+</body>
+</body>
+</html>
