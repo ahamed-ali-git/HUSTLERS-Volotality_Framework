@@ -1,6 +1,6 @@
 # HUSTLERS - Web Interface for Volatility Framework
 
-EVOLVE is a web-based interface for the Volatility Framework, designed to simplify memory dump analysis. It provides an easy-to-use frontend for uploading memory dumps, selecting analysis plugins, and viewing results.
+This is a web-based interface for the Volatility Framework, designed to simplify memory dump analysis. It provides an easy-to-use frontend for uploading memory dumps, selecting analysis plugins, and viewing results.
 
 ## Features
 
