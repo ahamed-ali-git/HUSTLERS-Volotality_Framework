@@ -1,4 +1,4 @@
-# HUSTLERS - Web Interface for Volatility Framework
+# Web Interface for Volatility Framework
 
 This is a web-based interface for the Volatility Framework, designed to simplify memory dump analysis. It provides an easy-to-use frontend for uploading memory dumps, selecting analysis plugins, and viewing results.
 
